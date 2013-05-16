@@ -54,6 +54,28 @@ p {
 
 /* header */
 
+.navbar {
+  .navbar-inner {
+    background-color: $wpGreen;
+    background-image: none;
+    border: none;
+  }
+}
+/* .navbar-inner {
+	background: green;
+}
+.navbar {
+	background: green;
+	padding-top: 100px;
+}
+.navbar-fixed-top {
+	background: green;
+} 
+
+.navbar-inverse{
+	background: green;
+} */
+
 #logo {
   float: left;
   margin-right: 10px;

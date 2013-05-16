@@ -1,7 +1,5 @@
 Workparty::Application.routes.draw do
   devise_for :users
-  get "users/new"
-  match '/signup', to: 'users#new', via: 'get'
 
   root :to => "events#index"
   # The priority is based upon order of creation: first created -> highest priority.

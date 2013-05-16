@@ -1,29 +1,40 @@
 <p id="notice"><%= notice %></p>
 
-<p>
-  <strong>Title:</strong>
-  <%= @event.title %>
-</p>
+<div id="event">
+  <div class="row">
+    <div class="span8">
+      <div class="title">
+        <%= @event.title %>
+      </div>
+      <div class="description">
+        <%= @event.description %>
+      </div>
+    </div>
 
-<p>
-  <strong>Description:</strong>
-  <%= @event.description %>
-</p>
+    <div class="span4">
+      <div style="background:red;">
+        
+        <div>
+          <strong>Location:</strong>
+          <%= @event.location %>
+        </div>
 
-<p>
-  <strong>Location:</strong>
-  <%= @event.location %>
-</p>
+        <div>
+          <strong>Starttime:</strong>
+          <%= @event.starttime %>
+        </div>
 
-<p>
-  <strong>Starttime:</strong>
-  <%= @event.starttime %>
-</p>
+        <div>
+          <strong>Endtime:</strong>
+          <%= @event.endtime %>
+        </div>
 
-<p>
-  <strong>Endtime:</strong>
-  <%= @event.endtime %>
-</p>
+      </div>
+    </div>
 
-<%= link_to 'Edit', edit_event_path(@event) %> |
-<%= link_to 'Back', events_path %>
+  </div>
+
+
+      <%= link_to 'Edit', edit_event_path(@event) %> |
+      <%= link_to 'Back', events_path %>
+</div>

@@ -1,11 +1,16 @@
 <header class="navbar navbar-fixed-top navbar-inverse" style="background:$wpGreen;">
   <div class="navbar-inner">
     <div class="container">
-      <%= link_to "WORK PARTY !", '#', id: "logo" %>
+      <%= link_to "WORK PARTY !", root_path, id: "logo" %>
       <nav>
         <ul class="nav pull-right">
-          <li><%= link_to "Create Account",    '#' %></li>
-          <li><%= link_to "Sign in", '#' %></li>
+          <% if user_signed_in? %>
+            <li><%= link_to current_user.email, edit_user_registration_path %></li>
+            <li><%= link_to "Logout", destroy_user_session_path, method: :delete %></li>
+          <% else %>
+            <li><%= link_to "Create Account", new_user_registration_path %></li>
+            <li><%= link_to "Sign In", new_user_session_path %></li>
+          <% end %>
         </ul>
       </nav>
     </div>

@@ -1,17 +1,22 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Workparty</title>
+  <title>WorkParty</title>
   <%= stylesheet_link_tag "application", media: "all", "data-turbolinks-track" => true %>
   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
   <%= csrf_meta_tags %>
   <%= render 'layouts/shim' %>
 </head>
 <body>
-	<%= render 'layouts/header' %>
+
+  <%= render 'layouts/header' %>
     <div class="container">
+      <% flash.each do |name, msg| %>
+        <p><%= content_tag :div, msg, id: "flash_#{name}", class: "alert" %></p>
+      <% end %>
       <%= yield %>
     </div>
-    <%= render 'layouts/footer' %>
+  <%= render 'layouts/footer' %>
+
 </body>
 </html>

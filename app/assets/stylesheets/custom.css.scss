@@ -60,27 +60,16 @@ p {
     background-image: none;
     border: none;
   }
+  a {
+  	
+  }
 }
-/* .navbar-inner {
-	background: green;
-}
-.navbar {
-	background: green;
-	padding-top: 100px;
-}
-.navbar-fixed-top {
-	background: green;
-} 
-
-.navbar-inverse{
-	background: green;
-} */
 
 #logo {
   float: left;
   margin-right: 10px;
   font-size: 1.7em;
-  color: #fff;
+  color: #ffffff;
   text-transform: uppercase;
   letter-spacing: -1px;
   padding-top: 9px;
@@ -92,6 +81,14 @@ p {
 	}
 }
 
+.header-links {
+  color: #ffffff;
+  &:hover {
+	  color: black;
+	  text-decoration: none;
+	}
+}
+
 
 
 /* footer */
@@ -99,6 +96,8 @@ p {
 footer {
   margin-top: 45px;
   padding-top: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
   border-top: 1px solid #eaeaea;
   color: #999;
 

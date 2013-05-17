@@ -9,25 +9,69 @@
       <div class="description">
         <%= @event.description %>
       </div>
+
+      <div class="bar">
+        <h1>Sign Up!</h1>
+      </div>
+
+      <div class="row">
+        <div class="span4">
+          <div class="bar">
+            <h1>Project needs:</h1>
+          </div>
+        </div>
+        <div class="span4">
+          <div class="bar">
+            <h1>I can give:</h1>
+          </div>
+        </div>
+      </div>
     </div>
 
     <div class="span4">
-      <div style="background:red;">
+      <div id="time-place">
+        <div class="map">
+          Map
+        </div>
         
-        <div>
-          <strong>Location:</strong>
-          <%= @event.location %>
-        </div>
-
-        <div>
-          <strong>Starttime:</strong>
-          <%= @event.starttime %>
-        </div>
-
-        <div>
-          <strong>Endtime:</strong>
-          <%= @event.endtime %>
-        </div>
+          <div class="small-title">
+            address:
+          </div>
+          <div class="content">
+            <%= @event.location %>
+          </div>
+          <div class="small-title">
+            start:
+          </div>
+          <div class="content">
+            <%= @event.starttime %>
+          </div>
+          <div class="small-title">
+            end:
+          </div>
+          <div class="content">
+            <%= @event.endtime %>
+          </div>
+          <hr>
+          <div class="small-title">
+            organizer:
+          </div>
+          <div class="content">
+            needs link
+          </div>
+          <div class="small-title">
+            email:
+          </div>
+          <div class="content">
+            needs link
+          </div>
+          <div class="small-title">
+            phone:
+          </div>
+          <div class="content">
+            needs link
+          </div>
+   
 
       </div>
     </div>

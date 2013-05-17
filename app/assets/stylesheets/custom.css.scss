@@ -26,6 +26,8 @@ textarea {
 /* variables */
 
 $wpGreen: #30b9a1;
+$warmGray: #dcddde;
+
 
 
 /* typography */
@@ -34,7 +36,7 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 1;
 }
 h1 {
-  font-size: 3em;
+  font-size: 2em;
   letter-spacing: -2px;
   margin-bottom: 30px;
   text-align: center;
@@ -86,15 +88,51 @@ p {
 
 #event {
 	.title {
-		font-size: 2.5em;
+		font-size: 2.25em;
+		font-weight:bold;
 	}
 	.description {
 		margin-top:1.25em;
 	}
+	.bar{
+			background:$wpGreen;
+			padding-bottom: .35em;
+			padding-top: .2em;
+			margin-top: 1.25em;
+			h1{
+				color:#ffffff;
+				letter-spacing: .025em;
+				margin-bottom: 0px;
+				margin-top: 0px;
+			}
+
+		}
+
 
 }
 #time-place {
-		background:red;
+		background: $warmGray;
+		padding: .75em;
+		.map{
+			background:white; 
+			height:16em;
+		}
+		.small-title{
+			color:#ffffff;
+			font-style: italic;
+			font-size: .8em;
+			margin-top:0em;
+			padding-top:0em;
+		}
+		.content{
+			font-weight: bold;
+			margin-bottom:.35em;
+		}
+		hr {
+			margin-bottom: .8em;
+			margin-top: .9em;
+		}
+
 	}
 
 

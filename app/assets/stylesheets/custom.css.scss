@@ -42,7 +42,7 @@ h1 {
   text-align: center;
 }
 h2 {
-  font-size: 1.2em;
+  font-size: 1.5em;
   letter-spacing: -1px;
   margin-bottom: 30px;
   text-align: center;
@@ -99,6 +99,7 @@ p {
 			padding-bottom: .35em;
 			padding-top: .2em;
 			margin-top: 1.25em;
+			margin-bottom: 1.75em;
 			h1{
 				color:#ffffff;
 				letter-spacing: .025em;
@@ -111,7 +112,13 @@ p {
 		font-size: 2em;
 	  	letter-spacing: 0px;
 	  	margin-bottom: 0px;
-	  	text-align: left;
+	  	text-align: center;
+	}
+	.form-label {
+		font-size: 2em;
+	  	margin-bottom: 0px;
+	  	padding-top: .2em;
+	  	text-align: right;
 	}
 
 

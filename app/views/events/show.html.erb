@@ -8,36 +8,67 @@
         <%= @event.description %>
       </div>
 
-      <div class="bar">
+      
 
 <% if !user_signed_in? %>
-  <h1>Sign Up!</h1>
+  <div class="bar">
+    <h1>Sign Up!</h1>
+  </div>
+  
   <%= form_for(:user, :url => registration_path(:user), :html => { :id => "user_reg_embedded" } ) do |f| %>
-
-    <div><%= f.label :email %><br />
-    <%= f.email_field :email %></div>
-
-    <div><%= f.label :name %><br />
-    <%= f.text_field :name %></div>
-
-    <div><%= f.label "Phone number (optional)" %><br />
-    <%= f.telephone_field :phone %></div>
-
-    <div><%= f.label :password %><br />
-    <%= f.password_field :password %></div>
-
-    <div><%= f.label :password_confirmation %><br />
-    <%= f.password_field :password_confirmation %></div>
-
-    <div><%= f.submit "Sign up" %></div>
+    
+    <div class="row">
+      <div class="span3">
+        <div class="form-label"><%= f.label :name %></div>      
+      </div>
+      <div class="span5">
+        <div><%= f.text_field :name %></div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="span3">
+        <div class="form-label"><%= f.label :email %></div>      
+      </div>
+      <div class="span5">
+        <div><%= f.email_field :email %></div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="span3">
+        <div class="form-label"><%= f.label "Phone Number (opt.)" %></div>      
+      </div>
+      <div class="span5">
+        <div><%= f.telephone_field :phone %></div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="span3">
+        <div class="form-label"><%= f.label :password %></div>      
+      </div>
+      <div class="span5">
+        <div><%= f.password_field :password %></div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="span3">
+        <div class="form-label"><%= f.label :password_confirmation %></div>      
+      </div>
+      <div class="span5">
+        <div><%= f.password_field :password_confirmation %></div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="span5 offset3" style="margin-top: 1em;">
+        <%= f.submit "Sign up" %>
+      </div>
+    </div>
+    
   <% end %>
 <% end %>
 
-      </div>
 
-      <div>
-        <h1>my name:</h1>
-      </div>
+
+     
 
       <div class="row">
         <div class="span4">

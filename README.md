@@ -33,6 +33,15 @@ bundle install
 rake db:migrate
 ```
 
+If you'd like to seed the database with some example data, run:
+```
+rake db:seed:example
+```
+
+This will create login credentials you can use:
+* **Email:** gob@codeforamerica.org
+* **Password:** illusionmichael
+
 From there you can start the server with the normal Rails command:
 
 ```

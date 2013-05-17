@@ -61,20 +61,24 @@
             organizer:
           </div>
           <div class="content">
-            needs link
+            <%= @event.organizer.name %>
           </div>
           <div class="small-title">
             email:
           </div>
           <div class="content">
-            needs link
+            <%= @event.organizer.email %>
           </div>
-          <div class="small-title">
-            phone:
-          </div>
-          <div class="content">
-            needs link
-          </div>
+          <% @phone = @event.organizer.phone %>
+          <% if @phone != nil %>
+            <div class="small-title">
+              phone:
+            </div>
+            <div class="content">
+              <%= @phone %>
+            </div>
+          <% end %>
+
    
 
       </div>

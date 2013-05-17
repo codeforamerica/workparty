@@ -1,5 +1,3 @@
-<p id="notice"><%= notice %></p>
-
 <div id="event">
   <div class="row">
     <div class="span8">
@@ -11,7 +9,30 @@
       </div>
 
       <div class="bar">
-        <h1>Sign Up!</h1>
+
+<% if !user_signed_in? %>
+  <h1>Sign Up!</h1>
+  <%= form_for(:user, :url => registration_path(:user), :html => { :id => "user_reg_embedded" } ) do |f| %>
+
+    <div><%= f.label :email %><br />
+    <%= f.email_field :email %></div>
+
+    <div><%= f.label :name %><br />
+    <%= f.text_field :name %></div>
+
+    <div><%= f.label "Phone number (optional)" %><br />
+    <%= f.telephone_field :phone %></div>
+
+    <div><%= f.label :password %><br />
+    <%= f.password_field :password %></div>
+
+    <div><%= f.label :password_confirmation %><br />
+    <%= f.password_field :password_confirmation %></div>
+
+    <div><%= f.submit "Sign up" %></div>
+  <% end %>
+<% end %>
+
       </div>
 
       <div>

@@ -50,6 +50,7 @@ end
 gem 'bootstrap-sass', '2.3.1.0'
 gem 'devise'
 gem 'protected_attributes'
+gem 'factory_girl_rails', '~> 4.0'
 
 group :development do
   gem 'pry'

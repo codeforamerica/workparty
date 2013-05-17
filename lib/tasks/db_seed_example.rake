@@ -6,6 +6,7 @@ namespace :db do
       # Multiple-entity example
       #2.times { FactoryGirl.create(:user) }
       FactoryGirl.create(:user) 
+      FactoryGirl.create(:event)
     end
 
   end

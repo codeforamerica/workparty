@@ -25,7 +25,12 @@ class EventsController < ApplicationController
   # POST /events
   # POST /events.json
   def create
-    @event = Event.new(event_params)
+    # Hacky new way to inject the current user's ID when saving
+    creation_params = event_params
+    creation_params["organizer_id"] = current_user.id
+    @event = Event.new(creation_params)
+    # Old
+    #@event = Event.new(event_params)
 
     respond_to do |format|
       if @event.save

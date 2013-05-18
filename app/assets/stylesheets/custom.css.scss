@@ -7,7 +7,7 @@ html {
   overflow-y: scroll;
 }
 body {
-  padding-top: 70px;
+  padding-top: 80px;
 }
 section {
   overflow: auto;
@@ -128,6 +128,17 @@ p {
 				margin-top: 0px;
 			}
 
+		}
+	.bar-gray{
+		border-top:1px solid $warmGray;
+		padding-bottom: 0em;
+		padding-top: 0em;
+		margin-top: 1.5em;
+		margin-bottom: 1.25em;
+		color:black;
+		font-style: italic;
+		font-size: .8em;
+		text-align:left;
 		}
 	h1{
 		font-size: 2em;

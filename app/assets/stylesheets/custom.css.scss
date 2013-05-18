@@ -82,7 +82,28 @@ p {
 	  background: none;
 	}
 }
+/* Landing Page */
 
+.event-thmbnl{
+	background:$warmGray;
+	padding: .75em;
+	.title-evnt{
+		font-size: 1.25em;
+		font-weight: bold;
+	}
+	.details{
+		font-style:italic;
+	}
+	.description{
+		margin-bottom: .5em;
+	}
+	.needs{
+		font-weight:bold;
+		background:$wpGreen;
+		text-align: center;
+		margin-top: .75em;
+	}
+}
 
 /* Event Page */
 
@@ -126,6 +147,7 @@ p {
 #time-place {
 		background: $warmGray;
 		padding: .75em;
+		margin-top: 1em;
 		.map{
 			background:white; 
 			height:16em;
@@ -145,8 +167,13 @@ p {
 			margin-bottom: .8em;
 			margin-top: .9em;
 		}
+		.bar{
+			margin-top: 0em;
+			margin-bottom: .75em;
+		}
 
 	}
+
 
 
 /* footer */

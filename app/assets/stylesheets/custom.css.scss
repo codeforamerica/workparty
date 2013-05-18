@@ -63,7 +63,10 @@ p {
     background-image: none;
     border: none;
   } 
+  .nav > li > a {color: white;}
+  .nav > li > a:hover {color:black;}
 }
+
 
 
 #logo {

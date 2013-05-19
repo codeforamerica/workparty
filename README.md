@@ -48,6 +48,8 @@ From there you can start the server with the normal Rails command:
 rails s
 ```
 
+and access it by navigating to http://localhost:3000 
+
 ## Contributing
 
 Because of the current extreme-alpha state, the best way to contribute is to provide general feedback on the idea and prototype on [GitHub Issues](https://github.com/codeforamerica/workparty/issues).

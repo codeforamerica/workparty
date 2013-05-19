@@ -11,27 +11,54 @@
     </div>
   <% end %>
 
-  <div class="field">
-    <%= f.label :title %><br>
+<div class="row">
+  <div class="span4" style="margin-bottom: 1em; text-align:right;">
+    <%= f.label :title %>   
+  </div>
+  <div class="span5" style="margin-bottom: 1em;">
     <%= f.text_field :title %>
   </div>
-  <div class="field">
-    <%= f.label :description %><br>
+</div>
+
+<div class="row">
+  <div class="span4" style="margin-bottom: 1em; text-align:right;">
+    <%= f.label :description %>    
+  </div>
+  <div class="span5" style="margin-bottom: 1em;">
     <%= f.text_field :description %>
   </div>
-  <div class="field">
-    <%= f.label :location %><br>
+</div>
+
+<div class="row">
+  <div class="span4" style="margin-bottom: 1em; text-align:right;">
+    <%= f.label :location %>    
+  </div>
+  <div class="span5" style="margin-bottom: 1em;">
     <%= f.text_field :location %>
   </div>
-  <div class="field">
-    <%= f.label :starttime %><br>
+</div>
+
+<div class="row">
+  <div class="span4" style="margin-bottom: 1em; text-align:right;">
+    <%= f.label :starttime %>   
+  </div>
+  <div class="span5" style="margin-bottom: 1em;">
     <%= f.datetime_select :starttime %>
   </div>
-  <div class="field">
-    <%= f.label :endtime %><br>
+</div>
+
+<div class="row">
+  <div class="span4" style="margin-bottom: 1em; text-align:right;">
+    <%= f.label :endtime %>   
+  </div>
+  <div class="span5" style="margin-bottom: 1em;">
     <%= f.datetime_select :endtime %>
   </div>
-  <div class="actions">
+</div>
+
+  <div class="actions span5 offset4" style="margin-top: 1em;">
     <%= f.submit %>
   </div>
 <% end %>
+
+

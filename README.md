@@ -48,7 +48,7 @@ From there you can start the server with the normal Rails command:
 rails s
 ```
 
-and access it by navigating to http://localhost:3000 
+and access it by navigating to [http://localhost:3000](http://localhost:3000).
 
 ## Contributing
 

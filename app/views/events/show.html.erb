@@ -66,20 +66,23 @@
   <% end %>
 <% end %>
 
-
-
-     
-
       <div class="row">
         <div class="span4">
           <div class="bar">
             <h1>Project needs:</h1>
           </div>
+          <h1>5 Volunteers</h1>
+          
+          <div class="bar-gray">materials & tools:</div>
+          <h1>12 Bananas</h1>
         </div>
         <div class="span4">
           <div class="bar">
-            <h1>I can give:</h1>
+            <h1>I can:</h1>
           </div>
+          <h1>Volunteer</h1>
+          <div class="bar-gray">bring materials & tools:</div>
+          <h1>5 bananas</h1>
         </div>
       </div>
     </div>
@@ -130,15 +133,23 @@
               <%= @phone %>
             </div>
           <% end %>
-
-   
-
+      </div>
+      <div id="time-place" style="padding-bottom: .75em;">
+        <div class="bar">
+          <h1>Invite a friend!</h1>
+        </div>
+        <div class="invitation">
+          <div class="invitation">(logo) Email</div>
+          <div class="invitation">(logo) Facebook</div>
+          <div class="invitation">(logo) Twitter</div> 
+        </div>   
       </div>
     </div>
 
   </div>
 
-
+    <div style="margin-top:2em;">
       <%= link_to 'Edit', edit_event_path(@event) %> |
       <%= link_to 'Back', events_path %>
+    </div>
 </div>

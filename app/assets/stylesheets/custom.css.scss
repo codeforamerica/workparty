@@ -7,7 +7,7 @@ html {
   overflow-y: scroll;
 }
 body {
-  padding-top: 60px;
+  padding-top: 80px;
 }
 section {
   overflow: auto;
@@ -63,7 +63,10 @@ p {
     background-image: none;
     border: none;
   } 
+  .nav > li > a {color: white;}
+  .nav > li > a:hover {color:black;}
 }
+
 
 
 #logo {
@@ -82,7 +85,43 @@ p {
 	  background: none;
 	}
 }
+/* Landing Page */
 
+.event-thmbnl{
+	background:$warmGray;
+	padding: .75em;
+	.title-evnt{
+		font-size: 1.25em;
+		font-weight: bold;
+	}
+	.details{
+		font-style:italic;
+	}
+	.description{
+		margin-bottom: .5em;
+	}
+	.needs{
+		font-weight:bold;
+		background:$wpGreen;
+		text-align: center;
+		margin-top: .75em;
+		margin-bottom: .3em;
+	}
+}
+
+#new-event{
+	background:$wpGreen;
+	padding-bottom: .35em;
+	padding-top: .2em;
+	margin-top: 1.25em;
+	margin-bottom: 1.75em;
+	h1{
+		color:#ffffff;
+		letter-spacing: .025em;
+		margin-bottom: 0px;
+		margin-top: 0px;
+	}
+}
 
 /* Event Page */
 
@@ -108,6 +147,17 @@ p {
 			}
 
 		}
+	.bar-gray{
+		border-top:1px solid $warmGray;
+		padding-bottom: 0em;
+		padding-top: 0em;
+		margin-top: 1.5em;
+		margin-bottom: 1.25em;
+		color:black;
+		font-style: italic;
+		font-size: .8em;
+		text-align:left;
+		}
 	h1{
 		font-size: 2em;
 	  	letter-spacing: 0px;
@@ -116,7 +166,7 @@ p {
 	}
 	.form-label {
 		font-size: 2em;
-	  	margin-bottom: 0px;
+	  	margin-bottom: 0em;
 	  	padding-top: .2em;
 	  	text-align: right;
 	}
@@ -126,6 +176,7 @@ p {
 #time-place {
 		background: $warmGray;
 		padding: .75em;
+		margin-top: 1em;
 		.map{
 			background:white; 
 			height:16em;
@@ -145,8 +196,18 @@ p {
 			margin-bottom: .8em;
 			margin-top: .9em;
 		}
+		.bar{
+			margin-top: 0em;
+			margin-bottom: .75em;
+		}
 
 	}
+
+.invitation{
+	font-weight: bold;
+	margin-top: .75em;
+	
+}
 
 
 /* footer */

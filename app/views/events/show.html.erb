@@ -148,8 +148,11 @@
 
   </div>
 
-    <div style="margin-top:2em;">
-      <%= link_to 'Edit', edit_event_path(@event) if @event.validate_edit_access(current_user) %> |
-      <%= link_to 'Back', events_path %>
-    </div>
+  <div style="margin-top:2em;">
+    <% if @event.validate_edit_access(current_user) %>
+      <%= link_to 'Edit', edit_event_path(@event) %> |
+    <% end %>
+
+    <%= link_to 'Back', events_path %>
+  </div>
 </div>

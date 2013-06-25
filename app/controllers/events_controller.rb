@@ -1,6 +1,7 @@
 class EventsController < ApplicationController
   before_action :set_event, only: [:show, :edit, :update, :destroy]
   before_filter :authenticate_user!, except: [:index, :show]
+  before_filter :can_edit_event?, only: [:edit, :update, :destroy]
 
   # GET /events
   # GET /events.json
@@ -76,5 +77,12 @@ class EventsController < ApplicationController
     # Never trust parameters from the scary internet, only allow the white list through.
     def event_params
       params.require(:event).permit(:title, :description, :location, :starttime, :endtime)
+    end
+
+    def can_edit_event?
+      unless @event.validate_edit_access(current_user)
+          flash.alert = "Only the Organizer can Edit an Event"
+          redirect_to event_path(@event)
+      end
     end
 end

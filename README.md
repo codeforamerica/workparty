@@ -27,7 +27,7 @@ WorkParty is built on Ruby 2 (2.0.0p195) and Rails 4 (4.0.0.rc1). If you are unf
 To get a local copy of the alpha app running:
 
 ```
-git clone git@github.com:codeforamerica/workparty.git
+git clone https://github.com/codeforamerica/workparty.git
 cd workparty
 bundle install
 rake db:migrate
